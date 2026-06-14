@@ -14,6 +14,9 @@ A small FastAPI service that holds *your* music state (playlists, listening hist
 
 </div>
 
+![ytmusic — the music library](docs/screenshots/library.png)
+_The music client served on top of `ytmusic` — library, ratings, and play counts, searchable and sortable._
+
 ---
 
 ## What is this?
