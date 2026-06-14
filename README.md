@@ -107,7 +107,11 @@ systemctl restart ytmusic
 systemctl status  ytmusic
 ```
 
-nginx routes `/api/music/` to this service; the music SPA is served at `/music/`.
+nginx routes the user-state slice of `/api/music/` — `playlists`, `history`, `ratings`,
+`continue-listening`, and `video` (tags) — to this service; the rest of `/api/music/` (library, search,
+artist, album, recommendations, lyrics, …) goes to `recommenderr`. The music SPA — built from the
+[`ytfrontend`](https://github.com/iversonianGremling/ytfrontend) repo (the platform's umbrella) — is
+served at `/music/`.
 
 ## License
 
